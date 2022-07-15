@@ -18,6 +18,8 @@ class CreatePostsTable extends Migration
             $table->string('title');
             $table->text('content');
             $table->enum('status', ['published', 'draft']);
+            $table->timestamp('created_date')->nullable();
+            $table->timestamp('updated_date')->nullable();
         });
     }
 
