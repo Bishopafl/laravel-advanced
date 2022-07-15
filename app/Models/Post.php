@@ -20,7 +20,9 @@ class Post extends Model
     /**
      * remove primary keys from a table in the database
      */
-    protected $primaryKey = null;
+    protected $primaryKey = 'u_id';
     public $incrementing = false;
+    protected $keyType = 'string';
+
     
 }
