@@ -11,4 +11,8 @@ class Post extends Model
 
     // public $timestamps = false;
     protected $guarded = [];
+
+    const CREATED_AT = 'created_date';
+
+    const UPDATED_AT = 'updated_date';
 }
